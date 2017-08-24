@@ -2776,7 +2776,7 @@ function Invoke-ACLScanner {
             # or you can write here your own filters - for example, filter for accounts that have only the GenericAll permission.
             ######
 
-        } | Export-Csv -NoTypeInformation –Append $exportCsvFile
+        } | Export-Csv -NoTypeInformation -append $exportCsvFile
     }
     catch{
         Write-Warning "`n$_"
